@@ -1,0 +1,57 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Main</title>
+    <link rel="stylesheet" type="text/css" href="{% static '/css/bootstrap.css' %}">
+
+        <link rel="stylesheet" type="text/css" href="{% static '/css/main.css' %}">
+
+        <style>
+		
+            #logo{
+            }
+    
+            body{
+                background-color: #ebeff5;
+            }
+    
+    
+            #total-orders{
+                background-color: #4cb4c7;
+            }
+    
+    
+            #orders-delivered{
+                background-color: #7abecc;
+            }
+    
+            #orders-pending{
+                background-color: #7CD1C0;
+            }
+    
+    
+    
+    
+        </style>
+
+</head>
+<body>
+	{%  include 'accounts/navbar.html' %}
+	<div class="container-fluid">
+	{% block content %}
+
+
+
+	{% endblock %}
+    </div>
+	<hr>
+    <h5>Our footer</h5>
+    
+    <script rel="stylesheet" type="text/javascript" src="{% static '/jquery/jquery.js' %}"></script>
+    <script rel="stylesheet" type="text/javascript" src="{% static '/js/bootstrap.js' %}"></script>
+	
+</body>
+</html>
